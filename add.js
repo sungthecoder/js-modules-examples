@@ -1,3 +1,3 @@
-function add(a, b) {
+myUtil.add = function(a, b) {
   return a + b;
 }

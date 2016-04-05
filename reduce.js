@@ -1,4 +1,4 @@
-function reduce(arr, iteratee) {
+myUtil.reduce = function(arr, iteratee) {
   var index = 0,
     length = arr.length,
     memo = arr[index];

@@ -1,3 +1,3 @@
-function sum(arr){
-  return reduce(arr, add);
+myUtil.sum = function(arr){
+  return myUtil.reduce(arr, myUtil.add);
 }
