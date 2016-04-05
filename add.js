@@ -1,7 +1,3 @@
-define(function(){
-  var add = function(a, b){
+module.exports = function add(a,b){
     return a + b;
-  };
-
-  return add;
-});
+};
