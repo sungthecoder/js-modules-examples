@@ -12,10 +12,10 @@ Then we starts to seperate JavaScript into seperate files
   </head>
   <body>
     <!-- Your HTML Markup goes here -->
-    <script type="text/javascript" src="file1.js></script>
-    <script type="text/javascript" src="file2.js></script>
-    <script type="text/javascript" src="file3.js></script>
-    <script type="text/javascript" src="main.js></script>
+    <script type="text/javascript" src="file1.js"></script>
+    <script type="text/javascript" src="file2.js"></script>
+    <script type="text/javascript" src="file3.js"></script>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
 
