@@ -4,13 +4,24 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors"
+    "start": "node ./node_modules/.bin/http-server",
+    "build-js": "jspm bundle-sfx app/main.js dist/bundle.js",
+    "build-html": "html-dist --config html-dist.config.js --input index.html",
+    "build": "npm run build-js && npm run build-html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^1.12.14",
-    "webpack-dev-server": "^1.14.1"
+    "html-dist": "^0.2.2",
+    "http-server": "^0.9.0",
+    "jspm": "^0.16.32"
+  },
+  "jspm": {
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
   }
 }
