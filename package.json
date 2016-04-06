@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "node ./node_modules/.bin/http-server",
+    "start": "jspm-server",
     "build-js": "jspm bundle-sfx app/main.js dist/bundle.js",
     "build-html": "html-dist --config html-dist.config.js --input index.html",
     "build": "npm run build-js && npm run build-html"
@@ -14,8 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "html-dist": "^0.2.2",
-    "http-server": "^0.9.0",
-    "jspm": "^0.16.32"
+    "jspm": "^0.16.32",
+    "jspm-server": "^1.0.1"
   },
   "jspm": {
     "devDependencies": {
