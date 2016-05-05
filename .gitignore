@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 bundle.js
 node_modules
 jspm_packages
 dist
+=======
+**/bundle.js
+**/node_modules
+>>>>>>> master
