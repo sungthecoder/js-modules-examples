@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JS Modules</title>
+  </head>
+  <body>
+    <h1>
+      The Answer is
+      <span id="answer"></span>
+    </h1>
+
+    <script type="text/javascript">
+      function add(a, b) {
+        return a + b;
+      }
+
+      function reduce(arr, iteratee) {
+        var index = 0,
+          length = arr.length,
+          memo = arr[index];
+
+        for(index += 1; index < length; index += 1){
+          memo = iteratee(memo, arr[index])
+        }
+        return memo;
+      }
+
+      function sum(arr){
+        return reduce(arr, add);
+      }
+
+      /* Main Function */
+      var values = [ 1, 2, 4, 5, 6, 7, 8, 9 ];
+      var answer = sum(values)
+      document.getElementById("answer").innerHTML = answer;
+    </script>
+  </body>
+</html>
